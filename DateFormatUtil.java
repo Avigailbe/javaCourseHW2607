@@ -4,7 +4,6 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.TextStyle;
 import java.util.Locale;
 
 public class DateFormatUtil {
@@ -14,8 +13,8 @@ public class DateFormatUtil {
         formatter = formatter.withLocale(Locale.CANADA_FRENCH);
         LocalDate date = LocalDate.parse(text, formatter);
 
-        String  dayOfWeek = date.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.CANADA);
-        System.out.println(dayOfWeek);
+     //   String  dayOfWeek = date.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.CANADA);
+     //   System.out.println(dayOfWeek);
         return date;
     }
 
